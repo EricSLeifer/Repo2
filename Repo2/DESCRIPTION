@@ -1,0 +1,25 @@
+Package: factorial2x2
+Type: Package
+Title: Design and analysis of 2x2 factorial trial
+Version: 0.1.0
+Author: Eric Leifer and James Troendle   
+Maintainer: Eric Leifer <Eric.Leifer@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+    Used for the design and analysis of a 2x2 factorial trial for
+    a time-to-event endpoint.  Performs the calculations in 
+    Leifer, Troendle, Kolecki, Follmann.
+    fac2x2analyze is the analysis function. 
+    It calls crit2x2 which 
+    calculates the critical values based on the correlations 
+    calculated in corr2x2.
+Depends: R (>= 3.6.0), survival, stats, mvtnorm
+Imports: 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
